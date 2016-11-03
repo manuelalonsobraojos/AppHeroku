@@ -1,1 +1,1 @@
-web: python ejercicio3.py
+web: gunicorn ejercicio3:app
