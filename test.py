@@ -4,17 +4,17 @@ import ejercicio3
 import tempfile
 from flask.ext.testing import TestCase
 
-class paginaEstaticaTestCase(unittest.TestCase):
+class ejercicio3TestCase(unittest.TestCase):
 
     def setUp(self):
         self.db_fd, paginaEstatica.app.config['DATABASE'] = tempfile.mkstemp()
-        paginaEstatica.app.config['TESTING'] = True
-        self.app = paginaEstatica.app.test_client()
+        ejercicio3.app.config['TESTING'] = True
+        self.app = ejercicio3.app.test_client()
         #paginaEstatica.init_db()
 
     def tearDown(self):
         os.close(self.db_fd)
-        os.unlink(paginaEstatica.app.config['DATABASE'])
+        os.unlink(ejercicio3.app.config['DATABASE'])
 
     def test_home_status_code(self):
         # sends HTTP GET request to the application
