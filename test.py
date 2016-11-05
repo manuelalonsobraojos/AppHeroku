@@ -1,6 +1,6 @@
 import unittest
 import os
-import paginaEstatica
+import ejercicio3
 import tempfile
 from flask.ext.testing import TestCase
 
