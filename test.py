@@ -16,8 +16,6 @@ class paginaEstaticaTestCase(unittest.TestCase):
         os.close(self.db_fd)
         os.unlink(paginaEstatica.app.config['DATABASE'])
 
-    #Aqui acaba el esqueleto principal
-
     def test_home_status_code(self):
         # sends HTTP GET request to the application
         # on the specified path
