@@ -2,7 +2,6 @@ import unittest
 import os
 import ejercicio3
 import tempfile
-from flask.ext.testing import TestCase
 
 class ejercicio3TestCase(unittest.TestCase):
 
